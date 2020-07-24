@@ -141,7 +141,7 @@ async def start_bot():
             "host": "127.0.0.1"
         }
         bot.db = await asyncpg.create_pool(**login_data)
-        await bot.start(bot.config['token'])
+        await bot.start(bot.config(Token_Ghosty))
     except KeyboardInterrupt:
         await stop_bot()
 
